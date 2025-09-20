@@ -52,6 +52,26 @@
 }
 
 @layer components {
+    /* ============== Navigation ============== */
+    .navLink {
+        @apply text-base font-medium leading-none tracking-wide capitalize cursor-pointer text-n-700 hover:text-n-800;
+    }
+
+    .mobileNavLink {
+        @apply text-p-50 hover:text-p-200;
+    }
+
+    .dropdown-menu {
+        @apply absolute right-8 top-[70%] w-[300px] bg-p-900 backdrop-blur-[15px] rounded-lg overflow-hidden flex flex-col gap-4 items-center justify-center h-0 transition-all duration-200 ease-in-out;
+    }
+
+    .dropdown-menu.open {
+        height: 150px;
+        padding: 2rem 0;
+    }
+
+    /* ============== Hero============== */
+
     .btn {
         @apply flex items-center justify-center gap-2 px-4 py-2 text-sm 
         tracking-wider text-white transition-colors duration-300 bg-p-900 
@@ -64,7 +84,7 @@
         -webkit-text-fill-color: transparent;
     }
 
-    /* ####### Partner logos ####### */
+    /* ============== Partner logos ============== */
     .main_heading {
         @apply mt-2 text-2xl tracking-wide capitalize lg:text-3xl font-lobster;
     }
@@ -75,12 +95,12 @@
 }
 
 @layer utilities {
-    /* ####### Partner logos ####### */
+    /* ============== Partner logos ============== */
     .sub_heading {
         @apply text-xs font-medium uppercase text-p-900;
     }
 
-    /* ####### Products ####### */
+    /* ============== Products ============== */
     .tabContainer {
         @apply flex flex-col w-full gap-8 md:flex-row md:gap-16;
 

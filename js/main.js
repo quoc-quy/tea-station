@@ -1,6 +1,22 @@
 import { partnerLogos, productList, partnerLogoBasePath } from "./data.js";
 
 /* ##############################
+        Navigation
+############################### */
+$(function () {
+    // show hide nav
+    $(".navbar").hidescroll();
+
+    // mobile dropdown menu
+    const toggleBtn = $("#toggle_btn");
+    const dropdownMenu = $(".dropdown-menu");
+
+    toggleBtn.click(() => {
+        dropdownMenu.toggleClass("open");
+    });
+});
+
+/* ##############################
         Partner Logos
 ############################### */
 $(function () {

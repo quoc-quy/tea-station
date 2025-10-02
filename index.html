@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,7 +15,6 @@
         />
 
         <!-- CSS -->
-        <link type="text/css" rel="stylesheet" href="./css/showHideNav.css" />
         <link type="text/css" rel="stylesheet" href="./css/responsive-tabs.css" />
         <!-- Add the slick-theme.css if you want default styling -->
         <link
@@ -30,6 +29,9 @@
             href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
         />
         <link rel="stylesheet" type="text/css" href="./css/animated-counter-prograssbar.css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <link type="text/css" rel="stylesheet" href="./css/showHideNav.css" />
+        <link type="text/css" rel="stylesheet" href="./css/animation.css" />
         <link rel="stylesheet" href="./dist/output.css" />
 
         <!-- JQuery -->
@@ -44,6 +46,7 @@
             src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
         ></script>
         <script defer type="text/javascript" src="./js/animated-counter-prograssbar.js"></script>
+        <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script defer src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script>
         <script src="./js/main.js" defer type="module"></script>
     </head>
@@ -99,6 +102,7 @@
                     class="absolute bottom-0 right-0 overflow-hidden z-0 md:-bottom-40 xl:top-1/2 xl:-translate-y-1/2"
                 >
                     <img
+                        data-aos="fade-left"
                         src="./assets//hero_img.png"
                         alt="hero_img"
                         class="h-full 2xl:[mask-image:linear-gradient(to_left,transparent,black_10%)]"
@@ -111,23 +115,30 @@
                 >
                     <div>
                         <h2
+                            data-aos="zoom-in"
+                            data-aos-delay="100"
                             class="mb-2 text-xs font-semibold leading-none tracking-wider text-center uppercase font-inter md:text-sm xl:text-start"
                         >
                             Hơn <span class="text-xs text-gradient md:text-sm">một trăm</span> hương
                             vị trà
                         </h2>
                         <h1
+                            data-aos="zoom-in"
+                            data-aos-delay="200"
                             class="text-5xl leading-none tracking-wide text-center capitalize font-lobster text-p-950 md:text-6xl lg:text-7xl"
                         >
                             Trà đặc biệt chế tác
                         </h1>
                     </div>
-                    <p class="max-w-xl px-4 text-center text-n-700 md:px-0 xl:text-start">
+                    <p
+                        data-aos="zoom-in"
+                        class="max-w-xl px-4 text-center text-n-700 md:px-0 xl:text-start"
+                    >
                         Sứ mệnh của chúng tôi là mang đến cho bạn sự yên bình và kết nối thông qua
                         các hương vị trà được chọn lọc cẩn thận và được tạo ra để nâng cao trải
                         nghiệm hàng ngày và sức khoẻ toàn diện cho bạn.
                     </p>
-                    <button>
+                    <button data-aos="zoom-in" data-aos-delay="300">
                         <a class="btn" href="#products"
                             >Tìm Hiểu Sản Phẩm
                             <img src="./assets/right-arrow.svg" alt="right-arrow"
@@ -143,7 +154,7 @@
         <section class="partner-logos">
             <div class="container">
                 <!-- heading -->
-                <div class="mt-10">
+                <div data-aos="fade-right" class="mt-10">
                     <h2 class="sub_heading">Có mặt tại</h2>
                     <h1 class="main_heading">
                         Những nhà phân phối <span class="text-gradient">uy tín</span>
@@ -169,7 +180,7 @@
             <div class="container">
                 <div class="flex flex-col gap-9">
                     <!-- heading -->
-                    <div class="mt-10">
+                    <div data-aos="fade-right" class="mt-10">
                         <h2 class="sub_heading">Tìm hiểu</h2>
                         <h1 class="main_heading">
                             sản phẩm <span class="text-gradient">trà ngon</span>
@@ -224,7 +235,7 @@
                                         lực cho cơ thể và trí óc của bạn!
                                     </p>
                                     <button>
-                                        <a href="" class="btn"
+                                        <a href="/products.html?filter-category=matcha" class="btn"
                                             >Xem Sản Phẩm Matcha
                                             <img src="./assets/right-arrow.svg" alt="" 51:01
                                         /></a>
@@ -257,8 +268,8 @@
                                         uống trà của bạn lên một tầm cao mới.
                                     </p>
                                     <button>
-                                        <a href="" class="btn"
-                                            >Xem Sản Phẩm Matcha
+                                        <a href="products.html?filter-category=whitetea" class="btn"
+                                            >Xem Sản Phẩm Trà Trắng
                                             <img src="./assets/right-arrow.svg" alt="" 51:01
                                         /></a>
                                     </button>
@@ -292,8 +303,8 @@
                                         từng ngụm một!
                                     </p>
                                     <button>
-                                        <a href="" class="btn"
-                                            >Xem Sản Phẩm Matcha
+                                        <a href="products.html?filter-category=oolong" class="btn"
+                                            >Xem Sản Phẩm Ô Long
                                             <img src="./assets/right-arrow.svg" alt="" 51:01
                                         /></a>
                                     </button>
@@ -322,8 +333,8 @@
                                         kỷ.
                                     </p>
                                     <button>
-                                        <a href="" class="btn"
-                                            >Xem Sản Phẩm Matcha
+                                        <a href="products.html?filter-category=blacktea" class="btn"
+                                            >Xem Sản Phẩm Trà Đen
                                             <img src="./assets/right-arrow.svg" alt="" 51:01
                                         /></a>
                                     </button>
@@ -372,7 +383,10 @@
                 <div
                     class="flex flex-col items-center justify-center w-full gap-0 lg:gap-10 lg:flex-row"
                 >
-                    <div class="feature-card group bg-[url(/assets/benefit_1.jpg)]">
+                    <div
+                        data-aos="zoom-in"
+                        class="feature-card group bg-[url(/assets/benefit_1.jpg)]"
+                    >
                         <div class="feature-filter"></div>
                         <h3>Nguồn cung cao cấp</h3>
                         <p>
@@ -380,7 +394,11 @@
                             lượng cao từ các trang trại địa phương.
                         </p>
                     </div>
-                    <div class="order-first feature-card bg-p-50 lg:order-none lg:bg-transparent">
+                    <div
+                        data-aos="zoom-in"
+                        data-aos-delay="400"
+                        class="order-first feature-card bg-p-50 lg:order-none lg:bg-transparent"
+                    >
                         <div>
                             <h2 class="sub_heading">Why Us?</h2>
                             <h1 class="leading-loose text-center main_heading">
@@ -388,7 +406,11 @@
                             </h1>
                         </div>
                     </div>
-                    <div class="feature-card group bg-[url(/assets/pic1.jpg)]">
+                    <div
+                        data-aos="zoom-in"
+                        data-aos-delay="200"
+                        class="feature-card group bg-[url(/assets/pic1.jpg)]"
+                    >
                         <div class="feature-filter"></div>
                         <h3>Hương vị và pha chế độc đáo</h3>
                         <p>
@@ -401,7 +423,11 @@
                 <div
                     class="flex flex-col items-center justify-center w-full lg:-mt-20 lg:gap-10 lg:flex-row"
                 >
-                    <div class="feature-card group bg-[url(/assets/benefit_3.jpg)]">
+                    <div
+                        data-aos="zoom-in"
+                        data-aos-delay="300"
+                        class="feature-card group bg-[url(/assets/benefit_3.jpg)]"
+                    >
                         <div class="feature-filter"></div>
                         <h3>Tập trung vào sức khỏe</h3>
                         <p>
@@ -409,7 +435,11 @@
                             chế cẩn thận để hỗ trợ trí óc, cơ thể và tâm hồn của bạn.
                         </p>
                     </div>
-                    <div class="feature-card group bg-[url(/assets/benefit_4.jpg)]">
+                    <div
+                        data-aos="zoom-in"
+                        data-aos-delay="300"
+                        class="feature-card group bg-[url(/assets/benefit_4.jpg)]"
+                    >
                         <div class="feature-filter"></div>
                         <h3>Trải Nghiệm Cá Nhân Hoá</h3>
                         <p>
@@ -428,13 +458,15 @@
             <div class="container my-20">
                 <!-- Tiêu đề -->
                 <div class="flex flex-col items-start md:items-center lg:items-start">
-                    <div>
+                    <div data-aos="fade-right">
                         <h2 class="sub_heading">Khách hàng yêu thích</h2>
                         <h1 class="main_heading">
                             Những Sản Phẩm <span class="text-gradient">Bán Chạy Nhất</span>
                         </h1>
                     </div>
                     <p
+                        data-aos="fade-right"
+                        data-aos-delay="100"
                         class="text-xs max-w-lg pr-16 text-start md:text-center lg:text-start text-n-500"
                     >
                         Khám phá những sản phẩm bán chạy nhất của chúng tôi, nơi chất lượng kết hợp
@@ -927,6 +959,7 @@
                     >
                         <!-- Watermark -->
                         <div
+                            data-aos="fade-right"
                             class="absolute hidden -translate-y-1/2 translate-x-36 top-1/2 right-1/2 md:block 2xl:translate-x-0"
                         >
                             <h1
@@ -938,7 +971,7 @@
                         </div>
 
                         <!-- Nội dung chính -->
-                        <div class="relative">
+                        <div class="relative" data-aos="fade-left">
                             <div class="mb-9">
                                 <h2 class="!text-p-200 sub_heading">Khám phá</h2>
                                 <h1 class="text-white main_heading">Câu chuyện & Sứ mệnh</h1>
@@ -970,7 +1003,7 @@
                         class="flex h-[515px] flex-col items-center justify-center flex-1 w-full px-10 py-20 border border-dotted border-p-600 gap-9"
                     >
                         <!-- Liên hệ -->
-                        <div>
+                        <div data-aos="fade-down">
                             <h2 class="sub_heading">Có câu hỏi?</h2>
                             <h1 class="main_heading">Liên hệ tea statio tại</h1>
                         </div>
@@ -1010,7 +1043,7 @@
                     <div
                         class="relative text-center flex flex-col items-center w-full flex-1 h-[515px] gap-9 px-10 py-20 border border-p-600 overflow-clip"
                     >
-                        <div>
+                        <div data-aos="fade-down">
                             <h2 class="sub_heading">Cập nhật thông tin</h2>
                             <h1 class="main_heading">Đăng kí theo dõi</h1>
                         </div>

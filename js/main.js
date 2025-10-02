@@ -45,3 +45,13 @@ $(function () {
         animation: "slide",
     });
 });
+
+/* ##############################
+        Best Seller
+############################### */
+$(function () {
+    $(".slider").slick({
+        autoplay: true,
+        dots: true,
+    });
+});

@@ -213,4 +213,21 @@
             @apply mt-2 text-xs text-center lg:text-base text-white/50;
         }
     }
+
+    /* ============== Contact============== */
+    .contact-info {
+        @apply w-full;
+
+        > div {
+            @apply flex items-center gap-2 px-2 py-2 bg-p-600;
+        }
+
+        h1 {
+            @apply text-white capitalize;
+        }
+
+        p {
+            @apply mt-2 text-base;
+        }
+    }
 }
